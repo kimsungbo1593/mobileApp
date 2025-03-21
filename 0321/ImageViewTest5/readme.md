@@ -1,1 +1,49 @@
+# 안드로이드 이미지 버튼 조작 앱 만들기
 
+각 버튼을 눌러 **이미지를 회전**시키거나, **투명도를 변경**하고,  
+`ScaleType`을 변경하여 **이미지의 크기나 비율을 조정**하는 앱을 만들어보자.
+
+## 주요 기능
+- 버튼 클릭 시 **이미지 회전**
+- 버튼 클릭 시 **이미지 투명도 변경**
+- `ScaleType` 변경을 통한 **이미지 크기 및 비율 조정**
+
+## 예제 코드 (Kotlin)
+
+```kotlin
+class MainActivity : AppCompatActivity() {
+    private lateinit var imageView: ImageView
+    private var rotationAngle = 0f
+    private var alphaValue = 1.0f
+    private val scaleTypes = arrayOf(
+        ImageView.ScaleType.CENTER,
+        ImageView.ScaleType.CENTER_CROP,
+        ImageView.ScaleType.CENTER_INSIDE,
+        ImageView.ScaleType.FIT_XY
+    )
+    private var scaleIndex = 0
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        imageView = findViewById(R.id.imageView)
+        
+        findViewById<Button>(R.id.btnRotate).setOnClickListener {
+            rotationAngle += 45f
+            imageView.rotation = rotationAngle
+        }
+
+        findViewById<Button>(R.id.btnAlpha).setOnClickListener {
+            alphaValue = if (alphaValue == 1.0f) 0.5f else 1.0f
+            imageView.alpha = alphaValue
+        }
+
+        findViewById<Button>(R.id.btnScaleType).setOnClickListener {
+            scaleIndex = (scaleIndex + 1) % scaleTypes.size
+            imageView.scaleType = scaleTypes[scaleIndex]
+        }
+    }
+}
+
+![Image](https://github.com/user-attachments/assets/dc7470fd-61c9-4d1e-b719-f543574f736e)
