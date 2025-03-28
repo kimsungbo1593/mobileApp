@@ -16,7 +16,11 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView diceImage;
-    private float currentRotation = 0f;
+    private Button Button;
+    private int[] diceImages = {
+            R.drawable.dice1, R.drawable.dice2, R.drawable.dice3,
+            R.drawable.dice4, R.drawable.dice5, R.drawable.dice6
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,20 +29,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         diceImage = findViewById(R.id.dice);
-        Button rollButton = findViewById(R.id.ROLL);
+        Button = findViewById(R.id.ROLL);
 
-        rollButton.setOnClickListener(view -> rotate());
-
+        Button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RandomDice();
+            }
+        });
     }
+    private void RandomDice() {
+        Random random = new Random();
+        int randomIndex = random.nextInt(6);
 
-    private void rotate() {
-        currentRotation += 45f;
-        RotateAnimation rotate = new RotateAnimation(currentRotation - 45, currentRotation,
-                RotateAnimation.RELATIVE_TO_SELF, 0.5f,
-                RotateAnimation.RELATIVE_TO_SELF, 0.5f);
-        rotate.setDuration(500);
-        rotate.setFillAfter(true);
-        diceImage.startAnimation(rotate);
+        diceImage.setImageResource(diceImages[randomIndex]);
     }
-
 }
+
+
