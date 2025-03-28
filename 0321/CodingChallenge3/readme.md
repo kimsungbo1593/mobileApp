@@ -14,4 +14,4 @@
 ## 예시 화면
 주사위가 굴려지고 나면 화면에 주사위의 결과 이미지가 표시됩니다.
 
-![Image](https://github.com/user-attachments/assets/7bb3831a-b530-47b2-a247-e5867c17a8fa)
+![Image](https://github.com/user-attachments/assets/cf7326f7-0f84-4957-bc58-cb381f6121f5)
