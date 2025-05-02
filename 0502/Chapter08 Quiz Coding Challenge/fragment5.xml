@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006635"
+    tools:context=".Fragment5Activity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="사용자를 상대하는 화면을 가지는 컴포넌트는    무엇인가?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="액티비티"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="컨텐트 제공자"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서비스"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="방송 수신자"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp" />
+
+</FrameLayout>

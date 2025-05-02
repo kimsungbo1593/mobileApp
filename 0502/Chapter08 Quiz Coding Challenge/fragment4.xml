@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006635"
+    tools:context=".Fragment4Activity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="앱을 가상으로 실행할 수 있는 장치는 무엇인가?"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SDK"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IntelliJ"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="안드로이드 스튜디오"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="250dp" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AVD"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="300dp" />
+
+</FrameLayout>
