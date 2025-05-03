@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Survey10Activity"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="24dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매우 만족" />
+
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="만족" />
+
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보통" />
+
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="불만족" />
+
+        <RadioButton android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매우 불만족" />
+    </RadioGroup>
+
+</FrameLayout>
