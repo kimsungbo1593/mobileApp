@@ -38,4 +38,4 @@
 이 앱은 기본적인 드로잉 기능을 잘 수행하며, 구조적 확장성과 학습용으로 매우 적합합니다.  
 향후 디자인 고도화 및 이미지 저장, 도형 추가 등 부가 기능을 통해 경쟁력을 높일 수 있습니다.
 
-![Image](https://github.com/user-attachments/assets/ae91cb86-c99d-4733-af0e-08d3d1502310)
+![Image](https://github.com/user-attachments/assets/c0eb23ca-15c7-44ef-9170-35b2446ca43b)
