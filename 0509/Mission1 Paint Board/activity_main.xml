@@ -56,15 +56,12 @@
             android:layout_height="wrap_content"
             android:text="R" />
     </LinearLayout>
-
-    <SeekBar
-        android:id="@+id/seek_stroke"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/button_layout"
-        android:layout_marginBottom="8dp"
-        android:max="50"
-        android:progress="8" />
-
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true" />
 
 </RelativeLayout>

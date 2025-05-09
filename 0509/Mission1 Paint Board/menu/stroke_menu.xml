@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/stroke_thin"
+        android:title="얇게"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/stroke_medium"
+        android:title="보통"
+        android:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/stroke_thick"
+        android:title="굵게"
+        android:showAsAction="ifRoom" />
+</menu>
