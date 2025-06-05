@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6F5EB"
+    tools:context=".Plastic2Activity">
+
+    <!-- 안내 텍스트 1 -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="398dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="1. 이물질 제거 후 파손없게 배출"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 안내 텍스트 2 -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="2. 깨진 유리는 신문지 등에 싸서 종량제봉투"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+    <!-- 안내 텍스트 3 -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="3. 도자기, 식기 등 그릇은 따로 배출"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+    <!-- 안내 텍스트 4 -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="4. 빈용기보증금 대상 유리병은\n소매점 등에서 환불"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+    <!-- 관련 이미지 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="363dp"
+        android:layout_height="338dp"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/glassimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4" />
+
+    <!-- 뒤로가기 버튼 -->
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.567" />
+</androidx.constraintlayout.widget.ConstraintLayout>

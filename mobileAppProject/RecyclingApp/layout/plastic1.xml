@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6F5EB"
+    tools:context=".Plastic1Activity">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="397dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="1. 물로 헹궈 내용물 제거하기"
+        android:textStyle="bold"
+        android:textColor="#1B5E20"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 안내 텍스트 2 -->
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2. 플라스틱 이외 재질 부착시 지자체\n조례에 따라 배출"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#1B5E20"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 안내 텍스트 3 -->
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3. 무색 페트병은 플라스틱과 구분하여 배출"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#1B5E20"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textView14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- 안내 텍스트 4 -->
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4. 펌핑 용기의 경우 펌프는 제거 후 배출"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#1B5E20"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@id/textView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="383dp"
+        android:layout_height="337dp"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/plasticimg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView16"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.567" />
+</androidx.constraintlayout.widget.ConstraintLayout>

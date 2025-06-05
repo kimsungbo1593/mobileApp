@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009C6D"
+    android:orientation="vertical"
+    tools:context=".InformationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재활용의 목적과 효과"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="폐기물의 분해기간"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="재활용에 관한 용어"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음식물쓰레기 분리배출"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp" />
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="음식물쓰레기 분리배출 요령"
+            android:padding="14dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:layout_marginBottom="2dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/arrow_left" />
+
+</LinearLayout>

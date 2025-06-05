@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009C6D"
+    android:orientation="vertical"
+    tools:context=".MainMenuActivity">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_round"
+        android:text="분리배출 4원칙"
+        android:textColor="#009C6D"
+        android:textSize="26sp" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_round"
+        android:text="분류 안내"
+        android:textColor="#009C6D"
+        android:textSize="26sp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_round"
+        android:text="관련 정보"
+        android:textColor="#009C6D"
+        android:textSize="26sp" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/btn_round"
+        android:text="중고 재활용 센터 위치"
+        android:textColor="#009C6D"
+        android:textSize="23sp" />
+
+
+</LinearLayout>
